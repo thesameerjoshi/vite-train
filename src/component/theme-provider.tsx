@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-export type Theme = "light" | "dark" | "retro" | "system";
+export type Theme = "light" | "dark" | "nord" | "system";
 
 interface ThemeContextProps {
   theme: Theme;
@@ -21,7 +21,7 @@ export const ThemeProvider: React.FC<{
 
   useEffect(() => {
     localStorage.setItem(storageKey, theme);
-    document.documentElement.className = theme;
+    document.documentElement.setAttribute("data-bhuban", theme);
   }, [theme, storageKey]);
 
   return (

@@ -14,7 +14,7 @@ const SelectTheme = () => {
         >
           <option value="light">Light</option>
           <option value="dark">Dark</option>
-          {/* <option value="nord">Nord</option> */}
+          <option value="nord">Nord</option>
         </select>
       </div>
     </div>
